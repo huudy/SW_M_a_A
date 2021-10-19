@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="game.css">
+
+    <!-- terminal -->
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.1.0/js/jquery.terminal.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.1.0/css/jquery.terminal.min.css" rel="stylesheet" />
+
+    <!-- end terminal -->
+
+</head>
+
+<body>
+    <script src="game_demo.js"></script>
+    <main>
+        <div style=" float:left; margin:10px">
+
+
+            <section>
+                <h3>Credits earned: <span id="current-credits">0</span></h3>
+                <button onclick="main()">Gamble - bet five credits</button>
+                <button onclick="addEnergy()">Get energy drink (100 credits)</button>
+                <p id="info"></p>
+            </section>
+            <section id="statistics">
+                <div>
+                    <h3>Statistics</h3>
+                    <p>Level: <span id="level"></span></p>
+                    <p>Total experience: <span id="totalExp"></span></p>
+                    <p>Health: <span id="currentHp"></span>/<span id="maxHp"></span></p>
+                    <p>Energy: <span id="currentEnergy"></span>/<span id="maxEnergy"></span></p>
+                    <p>Credits: <span id="credits"></span></p>
+                    <p>Force: <span id="force"></span></p>
+                </div>
+                <div>
+                    <h3>Skills</h3>
+                    <p>Fighting (bare hands): <span id="bare_hands"></span></p>
+                    <p>Fighting (lightsaber): <span id="lightsaber"></span></p>
+                    <p>Fighting (blaster): <span id="blaster"></span></p>
+                    <p>Force (mind tricks): <span id="mind_trick"></span></p>
+                    <p>Force (surroundings manipulation): <span id="surroundings_man"></span></p>
+                    <p>Piloting: <span id="piloting"></span></p>
+                    <p>Gambling: <span id="gambling"></span></p>
+                </div>
+            </section>
+        </div>
+
+        <!-- terminal -->
+        <div style=" float:center; margin:10px">
+            <div id="term_demo">
+            </div>
+        </div>
+        <!-- end terminal -->
+
+    </main>
+
+
+</body>
+
+</html>
